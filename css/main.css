@@ -608,4 +608,59 @@ h2 {
     display: block;
   }
 }
+
+.contact {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 50em;
+  padding: 5em 0;
+}
+
+.contact h1 {
+  text-align: center;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+  color: #606060;
+}
+
+input, textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  padding: .75em;
+  width: 100%;
+  background: #fcfcfc;
+  border: 1px solid #ebe9eb;
+  font-size: 1.2rem;
+}
+
+.button {
+  display: inline-block;
+  width: auto;
+  margin-top: 1em;
+  margin-left: auto;
+  background: #03afc2;
+  border: none;
+  font-size: 2.5rem;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1;
+  font-family: "Six Caps", sans-serif;
+  font-weight: 400;
+  padding: .5em 1.5em;
+}
 /*# sourceMappingURL=main.css.map */

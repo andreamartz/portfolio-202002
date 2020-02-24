@@ -3,6 +3,12 @@ body {
   font-family: $ff-s;
   line-height: 1.6;
   background: $white;
+  font-size: .875rem;
+}
+
+h1, h2, p {
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 h1 {
@@ -11,17 +17,12 @@ h1 {
   font-size: 3.125rem;
 
   span {
-    color: $accent;
-    font-family: $ff-ss;
+    @include sans-serif($fs: 5.5rem, $color: $accent);
     display: block;
-    font-size: 5.5rem;
-    letter-spacing: $letter-spacing;
   }
 }
 
 h2 {
-  font-size: 2rem;
-  letter-spacing: $letter-spacing;
-  color: $dark-gray;
-  line-height: 1;
+  @include sans-serif($fs: 2rem);
 }
+

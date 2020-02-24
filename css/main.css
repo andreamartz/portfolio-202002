@@ -444,7 +444,8 @@ h2 {
   width: 90%;
   margin: 0 auto;
   max-width: 50em;
-  margin-top: 3em;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 .about-me::after {
@@ -499,5 +500,63 @@ h2 {
   .about-text {
     grid-column: port-start / port-end;
   }
+}
+
+.portfolio {
+  text-align: center;
+  background: #ebe9eb;
+  padding: 5em 0;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  display: block;
+}
+
+.portfolio-item figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 2em;
+  background: rgba(3, 175, 194, 0.75);
+  color: #ffffff;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolio-title {
+  color: #ffffff;
+  font-size: 3.625rem;
+  margin-bottom: auto;
+}
+
+.portfolio-link {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-bottom: 3px solid #ffffff;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.portfolio-link::after {
+  content: url("../img/arrow.svg");
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  margin-left: .5em;
 }
 /*# sourceMappingURL=main.css.map */

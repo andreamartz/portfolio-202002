@@ -444,7 +444,8 @@ h2 {
   width: 90%;
   margin: 0 auto;
   max-width: 50em;
-  margin-top: 3em;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 .about-me::after {
@@ -504,6 +505,6 @@ h2 {
 .portfolio {
   text-align: center;
   background: #ebe9eb;
-  padding: 10em 0;
+  padding: 5em 0;
 }
 /*# sourceMappingURL=main.css.map */

@@ -500,4 +500,10 @@ h2 {
     grid-column: port-start / port-end;
   }
 }
+
+.portfolio {
+  text-align: center;
+  background: #ebe9eb;
+  padding: 10em 0;
+}
 /*# sourceMappingURL=main.css.map */

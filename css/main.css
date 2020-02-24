@@ -307,6 +307,12 @@ body {
   font-family: "Merriweather", serif;
   line-height: 1.6;
   background: #ffffff;
+  font-size: .875rem;
+}
+
+h1, h2, p {
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 h1 {

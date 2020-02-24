@@ -2,7 +2,13 @@
 .about-me {
   width: 90%;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 50em;
+}
+
+.about-me::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -446,12 +452,36 @@ h2 {
   display: block;
 }
 
+.about-me {
+  margin-top: 3em;
+}
+
+.about-img {
+  max-height: 25em;
+}
+
+@media (min-width: 42em) {
+  .about-img {
+    float: left;
+    margin-right: 1em;
+  }
+}
+
+.about-title {
+  margin-bottom: .25em;
+}
+
+.about-subtitle {
+  margin: 0.5em 0;
+}
+
 @supports (display: grid) {
   .about-me {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [port-end];
         grid-template-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [port-end];
+    margin-top: 1em;
   }
   .about-img {
     grid-column: port-start / img-end;
@@ -467,14 +497,10 @@ h2 {
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
         align-self: end;
-    margin-bottom: .25em;
   }
   .about-subtitle,
   .about-text {
     grid-column: port-start / port-end;
-  }
-  .about-subtitle {
-    margin: 0.5em 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

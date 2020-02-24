@@ -8,7 +8,9 @@
         "../scss/modules/_colors.scss",
         "../scss/vendor/_normalize.scss",
         "../scss/partials/_all.scss",
-        "../scss/partials/_base.scss"
+        "../scss/partials/_base.scss",
+        "../scss/partials/_welcome.scss",
+        "../scss/partials/_intro.scss"
     ],
     "names": [],
     "file": "main.css"

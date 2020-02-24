@@ -14,7 +14,7 @@
 
   figcaption {
     position: absolute;
-    top: 0;
+    top: 100%;
     bottom: 0;
     right: 0;
     left: 0;
@@ -24,6 +24,12 @@
     text-align: left;
     display: flex;
     flex-direction: column;
+    transition: top ease-in-out 250ms;
+  }
+
+  &:hover figcaption,
+  &:focus figcaption {
+    top: 0;
   }
 }
 
@@ -42,10 +48,10 @@
   align-self: flex-start;
 
   &::after {
-    content: url("../img/arrow.svg");
+    content: url("../img/arrow-white.svg");
     display: inline-block;
-    height: 1em;
-    width: 1em;
+    height: .8em;
+    width: .8em;
     margin-left: .5em;
   }
 }

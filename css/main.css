@@ -519,7 +519,7 @@ h2 {
 
 .portfolio-item figcaption {
   position: absolute;
-  top: 0;
+  top: 100%;
   bottom: 0;
   right: 0;
   left: 0;
@@ -534,6 +534,13 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: top ease-in-out 250ms;
+  transition: top ease-in-out 250ms;
+}
+
+.portfolio-item:hover figcaption,
+.portfolio-item:focus figcaption {
+  top: 0;
 }
 
 .portfolio-title {
@@ -553,10 +560,10 @@ h2 {
 }
 
 .portfolio-link::after {
-  content: url("../img/arrow.svg");
+  content: url("../img/arrow-white.svg");
   display: inline-block;
-  height: 1em;
-  width: 1em;
+  height: .8em;
+  width: .8em;
   margin-left: .5em;
 }
 /*# sourceMappingURL=main.css.map */

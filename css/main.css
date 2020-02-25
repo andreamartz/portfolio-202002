@@ -331,6 +331,12 @@ h1 {
   font-size: 3.125rem;
 }
 
+@media (min-width: 50em) {
+  h1 {
+    font-size: 4.25rem;
+  }
+}
+
 h2 {
   font-size: 2rem;
   letter-spacing: 0.15em;
@@ -339,6 +345,12 @@ h2 {
   line-height: 1;
   font-family: "Six Caps", sans-serif;
   font-weight: 400;
+}
+
+@media (min-width: 50em) {
+  h2 {
+    font-size: 3rem;
+  }
 }
 
 .welcome {
@@ -497,13 +509,20 @@ h2 {
     display: grid;
     -ms-grid-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [port-end];
         grid-template-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [port-end];
-    margin-top: 1em;
+    grid-column-gap: .5em;
   }
   .about-img {
     grid-column: port-start / img-end;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
+  }
+  @media (min-width: 50em) {
+    .about-img {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 3;
+      grid-row: 1 / 4;
+    }
   }
   .about-title {
     grid-column: name-start / port-end;
@@ -517,6 +536,22 @@ h2 {
   .about-subtitle,
   .about-text {
     grid-column: port-start / port-end;
+  }
+  @media (min-width: 50em) {
+    .about-subtitle,
+    .about-text {
+      grid-column: image-end / port-end;
+    }
+  }
+  .about-subtitle {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+  }
+  .about-text {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
   }
 }
 

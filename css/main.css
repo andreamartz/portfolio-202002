@@ -308,6 +308,7 @@ body {
   line-height: 1.6;
   background: #ffffff;
   font-size: .875rem;
+  overflow-x: hidden;
 }
 
 @media (min-width: 50em) {
@@ -328,7 +329,7 @@ h1, h2, p {
 h1 {
   color: #03afc2;
   line-height: 1;
-  font-size: 3.125rem;
+  font-size: 2.9rem;
 }
 
 @media (min-width: 50em) {
@@ -402,8 +403,11 @@ nav ul {
 }
 
 nav li {
-  border-bottom: 1px solid #223843;
   text-align: center;
+}
+
+nav li:not(:last-of-type) {
+  border-bottom: 1px solid #223843;
 }
 
 nav li:hover {
@@ -429,6 +433,11 @@ nav a {
   display: none;
 }
 
+.nav-is-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 .nav-is-open nav {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -437,6 +446,13 @@ nav a {
 .nav-is-open .container-all {
   -webkit-transform: translateX(80%);
           transform: translateX(80%);
+}
+
+.nav-is-open .container-all {
+  -webkit-transition: -webkit-transform ease-in-out 250ms;
+  transition: -webkit-transform ease-in-out 250ms;
+  transition: transform ease-in-out 250ms;
+  transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms;
 }
 
 .nav-is-open .hamburger {
@@ -450,13 +466,6 @@ nav a {
 .nav-is-open .menu-button {
   -webkit-transform: translateX(-70%);
           transform: translateX(-70%);
-}
-
-.container-all {
-  -webkit-transition: -webkit-transform ease-out 250ms;
-  transition: -webkit-transform ease-out 250ms;
-  transition: transform ease-out 250ms;
-  transition: transform ease-out 250ms, -webkit-transform ease-out 250ms;
 }
 
 .welcome {

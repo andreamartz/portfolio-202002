@@ -33,8 +33,11 @@ nav ul {
 }
 
 nav li {
-  border-bottom: 1px solid $dark-blue;
   text-align: center;
+  
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $dark-blue;
+  }
 }
 
 nav li:hover {
@@ -55,6 +58,9 @@ nav a {
 }
 
 .nav-is-open {
+  height: 100vh;
+  overflow-y: hidden;
+  
   nav {
     transform: translateX(0);
   }
@@ -62,6 +68,10 @@ nav a {
   .container-all {
     transform: translateX(80%);
   }
+
+  .container-all {
+  transition: transform ease-in-out 250ms;
+}
 
   .hamburger {
     display: none;
@@ -76,6 +86,3 @@ nav a {
   }
 }
 
-.container-all {
-  transition: transform ease-out 250ms;
-}

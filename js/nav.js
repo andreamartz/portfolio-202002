@@ -1,10 +1,12 @@
 const navToggle = document.querySelector('.menu-button');
 const nav = document.querySelector('nav');
 
+const bodyClassList = document.body.classList;
+
 navToggle.addEventListener('click', () => {
-  document.body.classList.toggle('nav-is-open');
+  bodyClassList.toggle('nav-is-open');
 })
 
 nav.addEventListener('click', () => {
-  document.body.classList.remove('nav-is-open');
+  bodyClassList.remove('nav-is-open');
 })

@@ -446,13 +446,10 @@ nav a {
 .nav-is-open .container-all {
   -webkit-transform: translateX(80%);
           transform: translateX(80%);
-}
-
-.nav-is-open .container-all {
-  -webkit-transition: -webkit-transform ease-in-out 250ms;
-  transition: -webkit-transform ease-in-out 250ms;
-  transition: transform ease-in-out 250ms;
-  transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms;
+  -webkit-transition: -webkit-transform ease-out 250ms;
+  transition: -webkit-transform ease-out 250ms;
+  transition: transform ease-out 250ms;
+  transition: transform ease-out 250ms, -webkit-transform ease-out 250ms;
 }
 
 .nav-is-open .hamburger {

@@ -67,11 +67,8 @@ nav a {
 
   .container-all {
     transform: translateX(80%);
+    transition: transform ease-out 250ms;
   }
-
-  .container-all {
-  transition: transform ease-in-out 250ms;
-}
 
   .hamburger {
     display: none;

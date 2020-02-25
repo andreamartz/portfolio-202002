@@ -359,6 +359,11 @@ h2 {
   left: 3em;
   background: transparent;
   border: 0;
+  -webkit-transition: -webkit-transform ease-in-out 250ms;
+  transition: -webkit-transform ease-in-out 250ms;
+  transition: transform ease-in-out 250ms;
+  transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms;
+  cursor: pointer;
 }
 
 nav {
@@ -368,6 +373,8 @@ nav {
   left: 0;
   right: 15%;
   z-index: 10;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 nav ul {
@@ -412,6 +419,11 @@ nav a {
   padding: calc(100vh/8) 0;
   line-height: 0;
   width: 100%;
+}
+
+.nav-is-open nav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .welcome {

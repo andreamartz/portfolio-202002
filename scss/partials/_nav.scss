@@ -4,6 +4,8 @@
   left: 3em;
   background: transparent;
   border: 0;
+  transition: transform ease-in-out 250ms;
+  cursor: pointer;
 }
 
 nav {
@@ -13,6 +15,8 @@ nav {
   left: 0;
   right: 15%;
   z-index: 10;
+
+  transform: translateX(-100%);
 }
 
 nav ul {
@@ -43,4 +47,10 @@ nav a {
   padding: calc(100vh/8) 0;
   line-height: 0;
   width: 100%;
+}
+
+.nav-is-open {
+  nav {
+    transform: translateX(0);
+  }
 }

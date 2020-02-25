@@ -689,6 +689,42 @@ form {
           flex-direction: column;
 }
 
+@supports (display: grid) {
+  @media (min-width: 50em) {
+    form {
+      display: -ms-grid;
+      display: grid;
+      grid-column: 1fr 1fr;
+      grid-column-gap: 1em;
+          grid-template-areas: "name     email" "message  message" "  .      button";
+    }
+    form .name {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: name;
+    }
+    form .email {
+      -ms-grid-row: 1;
+      -ms-grid-column: 2;
+      grid-area: email;
+    }
+    form .message {
+      -ms-grid-row: 2;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 2;
+      grid-area: message;
+    }
+    form .message textarea {
+      height: 10em;
+    }
+    form .button {
+      -ms-grid-row: 3;
+      -ms-grid-column: 2;
+      grid-area: button;
+    }
+  }
+}
+
 label {
   display: block;
   margin-top: 1em;

@@ -646,6 +646,12 @@ h2 {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+  @media (min-width: 50em) {
+    .portfolio-items {
+      -ms-grid-columns: (1fr)[4];
+          grid-template-columns: repeat(4, 1fr);
+    }
+  }
   .portfolio-item.featured {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
